@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -15,8 +15,26 @@
 <body>
     <h1 class="text-center">Hello World</h1>
 
+    <button onclick="alert('Click')">Tapahtumakäsittelijä luodaan kun nappi piirretään näytölle</button><br>
+
+    <button id="myBtn">Lisää tapahtumakäsittelijä vasta kun nappia painetaan</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const element = document.getElementById("myBtn");
+        element.addEventListener("click", function () {
+            document.getElementById("demo").innerHTML = "Hello World";
+        });
+    </script>
+
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        document.write("Sinä käytät " + navigator.appName + " selainta <br>");
+        document.write("Näytön leveys " + window.screen.width + " ja näytön korkeus " + window.screen.height);
+    </script>
 </body>
 
 </html>
